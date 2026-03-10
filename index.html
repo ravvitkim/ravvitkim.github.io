@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>김미래 | AI Engineer Portfolio</title>
-    <!-- <meta name="description" content="LangGraph, RAG, Multi-Agent 전문 AI 엔지니어 김미래의 포트폴리오"> -->
-    
+    <meta name="description" content="LangGraph, RAG, Multi-Agent 전문 AI 엔지니어 김미래의 포트폴리오">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <style>
         :root {
             --bg-primary: #ffffff;
@@ -27,10 +30,10 @@
             --text-secondary: #475569;
             --text-muted: #94a3b8;
             --border-color: #e2e8f0;
-            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
-            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
-            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
-            --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
         }
 
         * {
@@ -55,9 +58,11 @@
         ::-webkit-scrollbar {
             width: 8px;
         }
+
         ::-webkit-scrollbar-track {
             background: var(--bg-secondary);
         }
+
         ::-webkit-scrollbar-thumb {
             background: var(--accent-primary);
             border-radius: 4px;
@@ -70,8 +75,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: 
-                radial-gradient(circle at 1px 1px, rgba(0,0,0,0.03) 1px, transparent 0);
+            background-image:
+                radial-gradient(circle at 1px 1px, rgba(0, 0, 0, 0.03) 1px, transparent 0);
             background-size: 40px 40px;
             pointer-events: none;
             z-index: -2;
@@ -83,9 +88,9 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: 
-                radial-gradient(ellipse 80% 50% at 20% 0%, rgba(14,165,233,0.08) 0%, transparent 50%),
-                radial-gradient(ellipse 60% 40% at 80% 100%, rgba(99,102,241,0.06) 0%, transparent 50%);
+            background:
+                radial-gradient(ellipse 80% 50% at 20% 0%, rgba(14, 165, 233, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse 60% 40% at 80% 100%, rgba(99, 102, 241, 0.06) 0%, transparent 50%);
             pointer-events: none;
             z-index: -1;
         }
@@ -98,7 +103,7 @@
             right: 0;
             z-index: 1000;
             padding: 1rem 2rem;
-            background: rgba(255,255,255,0.8);
+            background: rgba(255, 255, 255, 0.8);
             backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--border-color);
             transition: all 0.3s ease;
@@ -345,8 +350,15 @@
         }
 
         @keyframes bounce {
-            0%, 100% { transform: translateX(-50%) translateY(0); }
-            50% { transform: translateX(-50%) translateY(10px); }
+
+            0%,
+            100% {
+                transform: translateX(-50%) translateY(0);
+            }
+
+            50% {
+                transform: translateX(-50%) translateY(10px);
+            }
         }
 
         @keyframes fadeInUp {
@@ -354,6 +366,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -441,7 +454,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: rgba(14,165,233,0.1);
+            background: rgba(14, 165, 233, 0.1);
             border-radius: 12px;
             font-size: 1.5rem;
         }
@@ -502,11 +515,25 @@
             font-size: 1.25rem;
         }
 
-        .tech-category:nth-child(1) .tech-category-icon { background: rgba(14,165,233,0.1); }
-        .tech-category:nth-child(2) .tech-category-icon { background: rgba(99,102,241,0.1); }
-        .tech-category:nth-child(3) .tech-category-icon { background: rgba(236,72,153,0.1); }
-        .tech-category:nth-child(4) .tech-category-icon { background: rgba(16,185,129,0.1); }
-        .tech-category:nth-child(5) .tech-category-icon { background: rgba(245,158,11,0.1); }
+        .tech-category:nth-child(1) .tech-category-icon {
+            background: rgba(14, 165, 233, 0.1);
+        }
+
+        .tech-category:nth-child(2) .tech-category-icon {
+            background: rgba(99, 102, 241, 0.1);
+        }
+
+        .tech-category:nth-child(3) .tech-category-icon {
+            background: rgba(236, 72, 153, 0.1);
+        }
+
+        .tech-category:nth-child(4) .tech-category-icon {
+            background: rgba(16, 185, 129, 0.1);
+        }
+
+        .tech-category:nth-child(5) .tech-category-icon {
+            background: rgba(245, 158, 11, 0.1);
+        }
 
         .tech-category-title {
             font-size: 1.1rem;
@@ -531,7 +558,7 @@
         }
 
         .tech-tag:hover {
-            background: rgba(14,165,233,0.1);
+            background: rgba(14, 165, 233, 0.1);
             color: var(--accent-primary);
         }
 
@@ -562,7 +589,7 @@
             direction: rtl;
         }
 
-        .project-card.reverse > * {
+        .project-card.reverse>* {
             direction: ltr;
         }
 
@@ -577,7 +604,7 @@
             align-items: center;
             gap: 0.5rem;
             padding: 0.4rem 1rem;
-            background: rgba(14,165,233,0.1);
+            background: rgba(14, 165, 233, 0.1);
             border-radius: 50px;
             font-size: 0.8rem;
             color: var(--accent-primary);
@@ -701,12 +728,12 @@
         }
 
         .arch-node.main {
-            background: rgba(14,165,233,0.1);
+            background: rgba(14, 165, 233, 0.1);
             border-color: var(--accent-primary);
         }
 
         .arch-node.sub {
-            background: rgba(99,102,241,0.1);
+            background: rgba(99, 102, 241, 0.1);
             border-color: var(--accent-secondary);
         }
 
@@ -762,7 +789,7 @@
         }
 
         .eq-node.orchestrator {
-            background: rgba(16,185,129,0.1);
+            background: rgba(16, 185, 129, 0.1);
             border-color: var(--accent-green);
             min-width: 280px;
         }
@@ -773,13 +800,24 @@
             min-width: 110px;
         }
 
-        .eq-node.sub:nth-child(1) { border-left: 3px solid var(--accent-primary); }
-        .eq-node.sub:nth-child(2) { border-left: 3px solid var(--accent-secondary); }
-        .eq-node.sub:nth-child(3) { border-left: 3px solid var(--accent-tertiary); }
-        .eq-node.sub:nth-child(4) { border-left: 3px solid var(--accent-orange); }
+        .eq-node.sub:nth-child(1) {
+            border-left: 3px solid var(--accent-primary);
+        }
+
+        .eq-node.sub:nth-child(2) {
+            border-left: 3px solid var(--accent-secondary);
+        }
+
+        .eq-node.sub:nth-child(3) {
+            border-left: 3px solid var(--accent-tertiary);
+        }
+
+        .eq-node.sub:nth-child(4) {
+            border-left: 3px solid var(--accent-orange);
+        }
 
         .eq-node.answer {
-            background: rgba(16,185,129,0.1);
+            background: rgba(16, 185, 129, 0.1);
             border-color: var(--accent-green);
             min-width: 280px;
         }
@@ -828,6 +866,7 @@
             .eq-sub-agents {
                 grid-template-columns: repeat(2, 1fr);
             }
+
             .eq-loop-arrow {
                 display: none;
             }
@@ -881,7 +920,7 @@
             background: var(--accent-primary);
             border-radius: 50%;
             transform: translateX(-50%);
-            box-shadow: 0 0 0 4px rgba(14,165,233,0.2);
+            box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.2);
         }
 
         .trouble-number {
@@ -917,67 +956,99 @@
             font-size: 0.95rem;
         }
 
-        .trouble-block.problem h5 { color: var(--accent-pink); }
-        .trouble-block.solution h5 { color: var(--accent-primary); }
-        .trouble-block.result h5 { color: var(--accent-green); }
+        .trouble-block.problem h5 {
+            color: var(--accent-pink);
+        }
+
+        .trouble-block.solution h5 {
+            color: var(--accent-primary);
+        }
+
+        .trouble-block.result h5 {
+            color: var(--accent-green);
+        }
 
         /* Experience Section */
         .experience {
             background: var(--bg-secondary);
         }
 
-        .exp-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
+        .timeline {
+            position: relative;
+            padding: 1rem 0 1rem 3rem;
         }
 
-        .exp-card {
-            padding: 2rem;
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--accent-primary), var(--accent-secondary));
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: -3.45rem;
+            top: 1.2rem;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--accent-primary);
+            border: 3px solid var(--bg-secondary);
+            box-shadow: 0 0 0 3px var(--accent-primary);
+            z-index: 1;
+        }
+
+        .timeline-card {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: 20px;
-            transition: all 0.3s ease;
+            padding: 2rem;
             box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+            width: 100%;
         }
 
-        .exp-card:hover {
+        .timeline-card:hover {
             border-color: var(--accent-primary);
-            transform: translateY(-4px);
+            transform: translateY(-3px);
             box-shadow: var(--shadow-lg);
-        }
-
-        .exp-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 1rem;
-        }
-
-        .exp-title {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: var(--text-primary);
         }
 
         .exp-period {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: var(--accent-primary);
-            padding: 0.25rem 0.75rem;
-            background: rgba(14,165,233,0.1);
+            padding: 0.2rem 0.6rem;
+            background: rgba(14, 165, 233, 0.1);
             border-radius: 6px;
+            display: inline-block;
+            margin-bottom: 0.6rem;
+        }
+
+        .exp-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.3rem;
         }
 
         .exp-company {
             color: var(--text-muted);
-            font-size: 0.95rem;
-            margin-bottom: 1rem;
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
         }
 
         .exp-description {
             color: var(--text-secondary);
-            font-size: 0.95rem;
+            font-size: 0.875rem;
         }
 
         /* Contact Section */
@@ -1070,8 +1141,8 @@
                 gap: 1rem;
             }
 
-            .exp-grid {
-                grid-template-columns: 1fr;
+            .timeline-card {
+                max-width: 100%;
             }
         }
 
@@ -1141,53 +1212,30 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Background -->
     <div class="bg-pattern"></div>
     <div class="bg-gradient"></div>
 
     <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <a href="#" class="nav-logo">김미래.dev</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-            </ul>
-            <a href="#contact" class="nav-contact">Contact</a>
-            <div class="mobile-toggle" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h1 class="hero-name">김미래</h1>
             <p class="hero-position">AI Engineer · Full-Stack</p>
-            <p class="hero-oneliner">LangGraph, RAG, Multi-Agent 기반 AI 서비스 개발</p>
-            <p class="hero-message">문제를 끝까지 해결하는 개발자입니다.</p>
-            <div class="hero-tags">
+            <!-- <p class="hero-oneliner">LangGraph, RAG, Multi-Agent 기반 AI 서비스 개발</p>
+             
+            -->
+            <p class="hero-message">항상 새로운 기술을 배우며 모험하는 것을 즐기고, 협업을 위해 배려하며 성장하기 위해 노력합니다.</p>
+            <!-- <div class="hero-tags">
                 <span class="hero-tag">LangGraph</span>
                 <span class="hero-tag">RAG</span>
                 <span class="hero-tag">Multi-Agent</span>
                 <span class="hero-tag">FastAPI</span>
                 <span class="hero-tag">React</span>
-            </div>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn-primary">프로젝트 보기</a>
-                <a href="https://github.com/ravvitkim" target="_blank" class="btn-secondary">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                    </svg>
-                    GitHub
-                </a>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -1200,32 +1248,32 @@
                     <h2 class="section-title">디자이너 출신 AI 엔지니어</h2>
                 </div>
                 <p>
-                    그래픽/웹 디자이너로 시작해 풀스택 개발을 거쳐 AI/ML 엔지니어링으로 전환했습니다. 
+                    그래픽/웹 디자이너로 시작해 풀스택 개발을 거쳐 AI/ML 엔지니어링으로 전환했습니다.
                     다양한 배경을 바탕으로 사용자 중심의 AI 서비스를 설계하고 구현합니다.
                 </p>
                 <p>
-                    LangGraph 기반의 멀티에이전트 시스템, RAG 파이프라인 개발, 
+                    LangGraph 기반의 멀티에이전트 시스템, RAG 파이프라인 개발,
                     그리고 Python/FastAPI와 React/TypeScript를 활용한 풀스택 AI 서비스 구축이 주요 강점입니다.
                 </p>
                 <div class="about-highlights">
                     <div class="highlight-card">
-                            <div class="highlight-icon">🎨</div>
-                            <p class="highlight-title">Background</p>
-                            <p class="highlight-value">UI/UX 감각</p>
-                        </div>
-                        <div class="highlight-card">
-                            <div class="highlight-icon">🤖</div>
-                            <p class="highlight-title">Specialty</p>
-                            <p class="highlight-value">Multi-Agent</p>
-                        </div>
-                        <div class="highlight-card">
-                            <div class="highlight-icon">🚀</div>
-                            <p class="highlight-title">Strength</p>
-                            <p class="highlight-value">Full-Stack</p>
-                        </div>
+                        <div class="highlight-icon">🎨</div>
+                        <p class="highlight-title">Background</p>
+                        <p class="highlight-value">UI/UX 감각</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🤖</div>
+                        <p class="highlight-title">Specialty</p>
+                        <p class="highlight-value">Multi-Agent</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🚀</div>
+                        <p class="highlight-title">Strength</p>
+                        <p class="highlight-value">Full-Stack</p>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -1323,7 +1371,7 @@
                     <h3 class="project-title">Easy-Quality</h3>
                     <p class="project-subtitle">지능형 SOP 규정 분석 시스템</p>
                     <p class="project-description">
-                        SOP 규정 문서를 자동 분석하고 질의응답을 제공하는 AI 에이전트. 
+                        SOP 규정 문서를 자동 분석하고 질의응답을 제공하는 AI 에이전트.
                         추론과 검증을 통해 문서의 무결성을 확보하고 감사 대응이 가능합니다.
                     </p>
                     <ul class="project-features">
@@ -1404,7 +1452,7 @@
                     <h3 class="project-title">ICU: AI 시각 도우미</h3>
                     <p class="project-subtitle">시각장애인용 이미지/비디오 음성 설명</p>
                     <p class="project-description">
-                        STT-LLM-TTS 파이프라인을 활용한 사용자의 음성과 실시간 영상 데이터를 
+                        STT-LLM-TTS 파이프라인을 활용한 사용자의 음성과 실시간 영상 데이터를
                         멀티모달 LLM으로 통합 분석하여, 즉각적인 음성 피드백을 제공하는 지능형 인터랙션 시스템
                     </p>
                     <ul class="project-features">
@@ -1456,7 +1504,7 @@
                     <h3 class="project-title">DDauction 땅땅옥션</h3>
                     <p class="project-subtitle">경매/중고거래 통합 커머스 플랫폼</p>
                     <p class="project-description">
-                        경매, 중고거래, 사업자 스토어를 하나로 통합한 대규모 커머스 플랫폼입니다. 
+                        경매, 중고거래, 사업자 스토어를 하나로 통합한 대규모 커머스 플랫폼입니다.
                         핵심 멤버로서 인증, 실시간 통신, 인프라 구축을 주도했습니다.
                     </p>
                     <ul class="project-features">
@@ -1594,38 +1642,42 @@
                 <p class="section-label">Experience</p>
                 <h2 class="section-title">경력 & 교육</h2>
             </div>
-            <div class="exp-grid">
-                <div class="exp-card fade-in">
-                    <div class="exp-header">
-                        <h4 class="exp-title">심화 생성형 AI활용 인재양성과정</h4>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
                         <span class="exp-period">2025.12 - 2026.02</span>
+                        <h4 class="exp-title">심화 생성형 AI활용 인재양성과정</h4>
+                        <p class="exp-company">하이미디어 아카데미 | 조별멘토</p>
+                        <p class="exp-description">PyTorch, AI 모델 성능 개선, 서비스 기획</p>
                     </div>
-                    <p class="exp-company">하이미디어 아카데미 | 조별멘토</p>
-                    <p class="exp-description">PyTorch, AI 모델 성능 개선, 서비스 기획</p>
                 </div>
-                <div class="exp-card fade-in">
-                    <div class="exp-header">
-                        <h4 class="exp-title">자바 풀스택 개발자 과정</h4>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
                         <span class="exp-period">2025.06 - 2025.12</span>
+                        <h4 class="exp-title">자바 풀스택 개발자 과정</h4>
+                        <p class="exp-company">하이미디어 아카데미</p>
+                        <p class="exp-description">Java, Spring Boot, React, MySQL, Git CI/CD</p>
                     </div>
-                    <p class="exp-company">하이미디어 아카데미</p>
-                    <p class="exp-description">Java, Spring Boot, React, MySQL, Git CI/CD</p>
                 </div>
-                <div class="exp-card fade-in">
-                    <div class="exp-header">
-                        <h4 class="exp-title">웹 디자이너</h4>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
                         <span class="exp-period">2024.02 - 2025.05</span>
+                        <h4 class="exp-title">웹 디자이너</h4>
+                        <p class="exp-company">(주)씨앤디메디메틱</p>
+                        <p class="exp-description">쇼핑몰 상세페이지, 패키지디자인, 마케팅</p>
                     </div>
-                    <p class="exp-company">(주)씨앤디메디메틱</p>
-                    <p class="exp-description">쇼핑몰 상세페이지, 패키지디자인, 마케팅</p>
                 </div>
-                <div class="exp-card fade-in">
-                    <div class="exp-header">
-                        <h4 class="exp-title">점장</h4>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
                         <span class="exp-period">2021.02 - 2025.01</span>
+                        <h4 class="exp-title">점장</h4>
+                        <p class="exp-company">잭슨피자 역삼점</p>
+                        <p class="exp-description">매장 운영, 인사/재고/매출 관리</p>
                     </div>
-                    <p class="exp-company">잭슨피자 역삼점</p>
-                    <p class="exp-description">매장 운영, 인사/재고/매출 관리</p>
                 </div>
             </div>
         </div>
@@ -1637,26 +1689,33 @@
             <div class="contact-content fade-in">
                 <h2 class="contact-title">함께 일해요</h2>
                 <p class="contact-description">
-                    새로운 기회와 협업에 열려 있습니다.<br>
-                    언제든 연락 주세요!
+                    기술로 의미 있는 문제를 해결하는 프로젝트에 열려 있습니다.
+                    협업이나 새로운 기회에 대해 언제든 이야기 나누고 싶습니다.
                 </p>
                 <div class="contact-links">
-                    <a href="/cdn-cgi/l/email-protection#bed3d7ccd5d7d3888e8688fed0dfc8dbcc90ddd1d3" class="contact-link">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                            <polyline points="22,6 12,13 2,6"/>
+                    <a href="/cdn-cgi/l/email-protection#bed3d7ccd5d7d3888e8688fed0dfc8dbcc90ddd1d3"
+                        class="contact-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
                         </svg>
-                        <span class="__cf_email__" data-cfemail="e78a8e958c8e8ad1d7dfd1a78986918295c984888a">[email&#160;protected]</span>
+                        <span class="__cf_email__"
+                            data-cfemail="e78a8e958c8e8ad1d7dfd1a78986918295c984888a">[email&#160;protected]</span>
                     </a>
                     <a href="tel:010-4645-6086" class="contact-link">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                         </svg>
                         010-4645-6086
                     </a>
                     <a href="https://github.com/ravvitkim" target="_blank" class="contact-link">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                         </svg>
                         GitHub
                     </a>
@@ -1670,7 +1729,8 @@
         <p>© 2025 김미래. Built with passion for AI.</p>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script>
         // Mobile Menu Toggle
         function toggleMenu() {
             const navLinks = document.querySelector('.nav-links');
@@ -1707,7 +1767,7 @@
 
         // Smooth scroll for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
@@ -1722,4 +1782,5 @@
         });
     </script>
 </body>
+
 </html>
