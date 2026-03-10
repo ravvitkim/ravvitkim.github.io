@@ -479,8 +479,19 @@
 
         .tech-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(6, 1fr);
             gap: 1.5rem;
+        }
+
+        .tech-grid .tech-category:nth-child(1),
+        .tech-grid .tech-category:nth-child(2),
+        .tech-grid .tech-category:nth-child(3) {
+            grid-column: span 2;
+        }
+
+        .tech-grid .tech-category:nth-child(4),
+        .tech-grid .tech-category:nth-child(5) {
+            grid-column: span 3;
         }
 
         .tech-category {
@@ -1332,17 +1343,14 @@
                 </p>
                 <div class="about-highlights">
                     <div class="highlight-card">
-                        <div class="highlight-icon">🎨</div>
                         <p class="highlight-title">Background</p>
                         <p class="highlight-value">UI/UX 감각</p>
                     </div>
                     <div class="highlight-card">
-                        <div class="highlight-icon">🤖</div>
                         <p class="highlight-title">Specialty</p>
                         <p class="highlight-value">Multi-Agent</p>
                     </div>
                     <div class="highlight-card">
-                        <div class="highlight-icon">🚀</div>
                         <p class="highlight-title">Strength</p>
                         <p class="highlight-value">Full-Stack</p>
                     </div>
@@ -1362,7 +1370,6 @@
             <div class="tech-grid">
                 <div class="tech-category fade-in">
                     <div class="tech-category-header">
-                        <div class="tech-category-icon">🤖</div>
                         <h3 class="tech-category-title">AI / ML</h3>
                     </div>
                     <div class="tech-tags">
@@ -1377,7 +1384,6 @@
                 </div>
                 <div class="tech-category fade-in">
                     <div class="tech-category-header">
-                        <div class="tech-category-icon">⚙️</div>
                         <h3 class="tech-category-title">Backend</h3>
                     </div>
                     <div class="tech-tags">
@@ -1390,7 +1396,6 @@
                 </div>
                 <div class="tech-category fade-in">
                     <div class="tech-category-header">
-                        <div class="tech-category-icon">💻</div>
                         <h3 class="tech-category-title">Frontend</h3>
                     </div>
                     <div class="tech-tags">
@@ -1401,7 +1406,6 @@
                 </div>
                 <div class="tech-category fade-in">
                     <div class="tech-category-header">
-                        <div class="tech-category-icon">🗄️</div>
                         <h3 class="tech-category-title">Database</h3>
                     </div>
                     <div class="tech-tags">
@@ -1414,7 +1418,6 @@
                 </div>
                 <div class="tech-category fade-in">
                     <div class="tech-category-header">
-                        <div class="tech-category-icon">🚀</div>
                         <h3 class="tech-category-title">DevOps</h3>
                     </div>
                     <div class="tech-tags">
@@ -1441,7 +1444,7 @@
             <div class="project-card fade-in">
                 <div class="project-info">
                     <div class="project-badge">
-                        <span>🏆 TEAM PROJECT · 4인</span>
+                        <span> TEAM PROJECT · 4인</span>
                     </div>
                     <h3 class="project-title">Easy-Quality</h3>
                     <p class="project-subtitle">지능형 SOP 규정 분석 시스템</p>
@@ -1471,7 +1474,7 @@
                                 <!-- Orchestrator -->
                                 <div class="eq-orchestrator">
                                     <div class="eq-node orchestrator">
-                                        <span class="eq-icon">🎯</span>
+                                        <span class="eq-icon"></span>
                                         <span class="eq-title">Orchestrator Agent</span>
                                         <span class="eq-desc">질문 의도 분석 · 라우팅 결정 · 루프제어 · 종료 판단</span>
                                     </div>
@@ -1481,22 +1484,22 @@
                                 <!-- Sub Agents -->
                                 <div class="eq-sub-agents">
                                     <div class="eq-node sub">
-                                        <span class="eq-icon">🔍</span>
+                                        <span class="eq-icon"></span>
                                         <span class="eq-title">Search Agent</span>
                                         <span class="eq-desc">벡터검색 · 요약 후 반환</span>
                                     </div>
                                     <div class="eq-node sub">
-                                        <span class="eq-icon">🔗</span>
+                                        <span class="eq-icon"></span>
                                         <span class="eq-title">Graph Agent</span>
                                         <span class="eq-desc">그래프DB 관계 추적</span>
                                     </div>
                                     <div class="eq-node sub">
-                                        <span class="eq-icon">⚖️</span>
+                                        <span class="eq-icon"></span>
                                         <span class="eq-title">Comparison Agent</span>
                                         <span class="eq-desc">문서간 버전 비교</span>
                                     </div>
                                     <div class="eq-node sub">
-                                        <span class="eq-icon">💬</span>
+                                        <span class="eq-icon"></span>
                                         <span class="eq-title">Chat Agent</span>
                                         <span class="eq-desc">대화 히스토리 관련 응답</span>
                                     </div>
@@ -1505,7 +1508,7 @@
                                 <!-- Answer Agent -->
                                 <div class="eq-answer">
                                     <div class="eq-node answer">
-                                        <span class="eq-icon">📝</span>
+                                        <span class="eq-icon"></span>
                                         <span class="eq-title">Answer Agent</span>
                                         <span class="eq-desc">데이터 결과 통합 · 참고문서 정리 · 최종 응답 생성</span>
                                     </div>
@@ -1522,7 +1525,7 @@
             <div class="project-card reverse fade-in">
                 <div class="project-info">
                     <div class="project-badge">
-                        <span>🎯 TEAM PROJECT · 5인</span>
+                        <span> TEAM PROJECT · 5인</span>
                     </div>
                     <h3 class="project-title">ICU: AI 시각 도우미</h3>
                     <p class="project-subtitle">시각장애인용 이미지/비디오 음성 설명</p>
@@ -1574,7 +1577,7 @@
             <div class="project-card fade-in">
                 <div class="project-info">
                     <div class="project-badge">
-                        <span>⭐ CORE MEMBER · 5인</span>
+                        <span> CORE MEMBER · 5인</span>
                     </div>
                     <h3 class="project-title">DDauction 땅땅옥션</h3>
                     <p class="project-subtitle">경매/중고거래 통합 커머스 플랫폼</p>
@@ -1768,15 +1771,13 @@
                     협업이나 새로운 기회에 대해 언제든 이야기 나누고 싶습니다.
                 </p>
                 <div class="contact-links">
-                    <a href="/cdn-cgi/l/email-protection#bed3d7ccd5d7d3888e8688fed0dfc8dbcc90ddd1d3"
-                        class="contact-link">
+                    <a href="mailto:mirkim6086@naver.com" class="contact-link">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
                             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                             <polyline points="22,6 12,13 2,6" />
                         </svg>
-                        <span class="__cf_email__"
-                            data-cfemail="e78a8e958c8e8ad1d7dfd1a78986918295c984888a">[email&#160;protected]</span>
+                        mirkim6086@naver.com
                     </a>
                     <a href="tel:010-4645-6086" class="contact-link">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
