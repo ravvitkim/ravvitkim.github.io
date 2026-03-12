@@ -44,6 +44,7 @@
 
         html {
             scroll-behavior: smooth;
+            font-size: 100%;
         }
 
         body {
@@ -52,6 +53,7 @@
             color: var(--text-primary);
             line-height: 1.7;
             overflow-x: hidden;
+            zoom: 0.7;
         }
 
         /* Scrollbar */
@@ -1577,6 +1579,54 @@
                                 <div class="arch-arrow">↓</div>
                                 <div class="arch-row">
                                     <div class="arch-node main">TTS<br><small>음성 피드백</small></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <!-- Project 4: AI Interview Coach -->
+            <div class="project-card reverse fade-in">
+                <div class="project-info">
+                    <div class="project-badge">
+                        <span>🎤 TEAM PROJECT</span>
+                    </div>
+                    <h3 class="project-title">AI 인터뷰 코치</h3>
+                    <p class="project-subtitle">웹캠 기반 AI 면접 태도 분석</p>
+                    <p class="project-description">
+                        웹캠을 통해 실시간으로 면접자의 표정, 시선, 자세, 음성을 분석하여 
+                        AI가 종합적인 면접 태도 피드백을 제공하는 서비스
+                    </p>
+                    <ul class="project-features">
+                        <li>DeepFace: 7가지 표정 감정 분류</li>
+                        <li>MediaPipe Iris: 시선 추적 분석</li>
+                        <li>MediaPipe Pose: 자세 추적 분석</li>
+                        <li>Whisper: STT + 음성 감정 분석</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>FastAPI</span>
+                        <span>DeepFace</span>
+                        <span>MediaPipe</span>
+                        <span>Whisper</span>
+                        <span>React</span>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <div class="project-image-wrapper">
+                        <div class="project-architecture">
+                            <div class="arch-diagram">
+                                <div class="arch-row">
+                                    <div class="arch-node main">User (웹캠)<br><small>영상 + 음성</small></div>
+                                </div>
+                                <div class="arch-arrow">↓</div>
+                                <div class="arch-row">
+                                    <div class="arch-node sub">DeepFace<br><small>표정분석</small></div>
+                                    <div class="arch-node sub">MediaPipe<br><small>시선/자세</small></div>
+                                    <div class="arch-node sub">Whisper<br><small>음성분석</small></div>
+                                </div>
+                                <div class="arch-arrow">↓</div>
+                                <div class="arch-row">
+                                    <div class="arch-node main">LLM 피드백<br><small>종합 분석 리포트</small></div>
                                 </div>
                             </div>
                         </div>
